@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://use.typekit.net/rxd1bir.css");
+
+/* font styles */
+
+/* BASE HTML ELEMENTS*/
+body{
+    overflow-x: hidden;
+    max-width: 50rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    background-color: rgb(254, 254, 252);
+    color: #100C08;
+    border-style: solid;
+    border-color: rgb(254, 254, 252);
+}
+
+h1{
+    font-family: "gothiks-round";
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400; 
+}
+
+h2{
+    font-family: Outfit;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3{
+    font-family: Outfit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h3.title{
+    display: inline;
+    font-family: "gothiks-round";
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+}
+
+h3.proj{
+    font-family: "gothiks-round";
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h4{
+    margin: 0;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.colour{
+    color: #07AED1;
+}
+
+.card > div > h3{
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.card > div > p{
+    font-size: 1rem;
+}
+
+.card > div > *{
+    padding: 0.3rem;
+}
+
+
+
+.card > h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p{
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.half-title > p{
+    margin-top: 2.5rem;
+}
+
+b{
+    font-weight: 700;
+}
+
+
+a{
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus, a:hover{
+    text-decoration: underline;
+    text-decoration-color: #272E63;
+    color: #272E63;
+}
+
+a.active{
+    font-weight: 400;
+}
+
+a.blog-post{
+    font-family: Outfit;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+a.blog-post:hover, a.blog-post:hover{
+    color: #272E63;
+} 
+
+nav > a{
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav > a:hover, nav > a:focus{
+    text-decoration: underline;
+}
+
+.home-icon{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+
+.home-icon img{
+    width: 2rem;
+}
+
+.home-link{
+    font-family: "gothiks-round";
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home-icon:hover, .home-icon:focus{
+    text-decoration: underline;
+}
+
+
+
+/* box layout */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+nav > div{
+    display: flex ;
+    gap: 1rem;
+    align-content: center;
+}
+
+.title img{
+    width: 4rem;
+    height: 100%;
+
+}
+
+section{
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+section.reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.line{
+    border-top: solid 2px;
+    padding-top: 2rem;
+}
+
+section > div{
+    width: 250px;
+    flex-grow: 2;
+}
+
+.cen{
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+img.news{
+    max-width: 200px;
+    height: 100%;
+
+}
+
+.v-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.h-wrapper, .n-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    flex-grow: 2;
+}
+
+
+.h-wrapper.cards{
+    justify-content: flex-end;
+}
+
+.n-wrapper > div{
+    min-width: 200px;
+    width: 60%;
+}
+
+
+section.proj-body{
+    margin-top: 0;
+}
+
+.proj-body > div{
+    width: 100%;
+}
+
+.proj-body > h1{
+    margin: 0;
+}
+
+.proj-body > p{
+    margin:0;
+    margin-left: 10rem;
+}
+
+.half{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.half > *{
+    width: 47%;
+    min-width: fit-content;
+}
+
+.half > img{
+    min-width: 200px;
+}
+
+.half-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 2;
+}
+
+.half-title > *{
+    width: 45%;
+    margin-top: 2rem;
+}
+
+
+/* cards */
+
+.card{
+    /* border: solid rgba(43, 30, 30, 0.65); */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.card > div{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card img{
+    transition: 0.2s;
+}
+
+.card:hover > img, .card:focus > img{
+    opacity: 75%;
+}
+
+.card:hover > div, .card:focus > div{
+    height: 12rem
+}
+
+.empty{
+    border: none;
+}
+
+
+
