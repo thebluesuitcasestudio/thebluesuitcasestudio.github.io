@@ -230,6 +230,10 @@ img{
     height: auto;
 }
 
+img.home-img{
+    margin-top: 5rem;
+}
+
 img.news{
     max-width: 200px;
     height: 100%;
