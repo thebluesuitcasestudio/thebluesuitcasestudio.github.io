@@ -115,6 +115,14 @@ a{
     cursor: pointer;
 }
 
+.caption{
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: left;
+    opacity: 50%;
+}
+
+
 a:focus, a:hover{
     text-decoration: underline;
     text-decoration-color: #272E63;
@@ -219,6 +227,10 @@ section.reverse{
     padding-top: 2rem;
 }
 
+.subtitle{
+    padding: 0;
+}
+
 section > div{
     width: 250px;
     flex-grow: 2;
@@ -260,6 +272,17 @@ img.news{
     flex-grow: 2;
 }
 
+.no-wrap{
+    flex-wrap: nowrap;
+    object-fit: contain;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.no-wrap img{
+    max-height: 170px;
+    width: auto;
+}
 
 .h-wrapper.cards{
     justify-content: flex-end;
@@ -330,6 +353,8 @@ section.proj-body{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 
