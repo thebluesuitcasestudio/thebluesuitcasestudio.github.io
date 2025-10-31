@@ -14,6 +14,7 @@ body{
     color: #100C08;
     border-style: solid;
     border-color: rgb(254, 254, 252);
+    cursor:default;
 }
 
 h1{
@@ -206,6 +207,84 @@ nav > a:hover, nav > a:focus{
 
 footer > p{
     font-size: 0.9rem;
+}
+
+
+.text-container{
+    padding-top: 30dvw;
+    width: 60dvw;
+    margin: auto;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.people{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.text-container::-webkit-scrollbar {
+  display: none;         
+}
+
+footer.blur{
+     margin-top: 1rem;
+     box-shadow: 0px -40px 15px rgb(254, 254, 252);
+}
+
+.last{
+    margin-bottom: 3rem;
+}
+
+.text-container .cen{
+    margin-top: 4rem;
+    border-top: solid;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.text-container a{
+    text-decoration: underline;
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1.1rem;
+    z-index: 0;
+}
+
+.bookmarks{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 99;
+    box-shadow: 0px 20px 15px rgb(254, 254, 252);
+}
+
+.bookmarks a{
+    font-size: 1rem;
+}
+
+.l{
+    width: fit-content;
+    max-width: 75%;
+    border: solid #009ACA;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: #8EDEF7;
+}
+
+.r{
+    justify-self: right;
+    width: fit-content;
+    max-width: 75%;
+    border: solid #007B06;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: #BEFCC1;
+
 }
 
 
