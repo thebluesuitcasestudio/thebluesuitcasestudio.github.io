@@ -213,6 +213,7 @@ footer > p{
 .text-container{
     padding-top: 30dvw;
     width: 60dvw;
+    max-width: 50rem;
     margin: auto;
     overflow: auto;
     scrollbar-width: none;
@@ -240,6 +241,7 @@ footer.blur{
 }
 
 .text-container .cen{
+    max-width: 800px;
     margin-top: 4rem;
     border-top: solid;
     padding-top: 2rem;
@@ -252,6 +254,10 @@ footer.blur{
     font-weight: 300;
     font-size: 1.1rem;
     z-index: 0;
+}
+
+.text-container .r{
+    justify-content: right;
 }
 
 .bookmarks{
@@ -268,6 +274,8 @@ footer.blur{
 }
 
 .l{
+    justify-self: left;
+    justify-content: left;
     width: fit-content;
     max-width: 75%;
     border: solid #009ACA;
