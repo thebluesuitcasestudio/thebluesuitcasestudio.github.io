@@ -354,6 +354,7 @@ section > div{
     align-content: center;
     align-self: center;
     text-align: center;
+    justify-content: center;
 }
 
 img{
