@@ -256,10 +256,6 @@ footer.blur{
     z-index: 0;
 }
 
-.text-container .r{
-    justify-content: right;
-}
-
 .bookmarks{
     justify-content: center;
     display: flex;
@@ -285,6 +281,7 @@ footer.blur{
 }
 
 .r{
+    margin-left: auto;
     justify-self: right;
     width: fit-content;
     max-width: 75%;
