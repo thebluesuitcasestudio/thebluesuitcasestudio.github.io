@@ -357,6 +357,13 @@ section > div{
     justify-content: center;
 }
 
+.left{
+    align-content: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    justify-content:left;
+}
+
 img{
     width: 100%;
     height: auto;
