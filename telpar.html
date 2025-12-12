@@ -30,10 +30,15 @@
             <p><b>An interactive video installation</b></p>
         </div>
         
-        <img src="img/telpar/live-interaction.jpg" style="border: solid, 1px;">
+        <img src="img/telpar/starting soon.jpg">
 
         <div class="one-third">
-            <p>Summer 2024 <br> SFU Surrey Campus</p>
+            <div class="subtitle line">
+                <p><b>Presented</b></p>
+                <p>2024 <br> SFU Surrey Campus</p>
+                <p>2025 <br> SFU Burnaby, Vancouver, and Surrey campuses</p>
+            </div>
+            
             <p>Telematic Parallels is a site-specific interactive video installation that connects remote locations rooted in a similar purpose. Through three live video feeds composed into a singular tableau, this digital collage collapses the distance across space. Using hand tracking and gestures, users can experience a sense of play as they create a liminal arrangement that connects each space to each other.
             </p>
         </div>
@@ -41,13 +46,14 @@
         
         
         <div class="half">
-            <img src="img/telpar/product-1.JPG">
             <img src="img/telpar/product-2.JPG">
+            <img src="img/telpar/IMG_3671 (1).jpg">
         </div>
+        <p class="caption">Version 1 on the left; version 2 on the right</p>
         <p>As students from Simon Fraser University (SFU), Triane and Mackenzie started with the goal of connecting the three satellite campuses of SFU through telepresence. Although the campuses are geographically separated, the joint activity of going to University at SFU links students through a common experience. The installation allows students to see the university in parallel across campuses.<br><br>Physically the installation stands as a set of a large monitor in three different locations on the SFU Surrey campus. Each setup captured and streamed live footage for the other setups to retrieve. On the screen were three video “window” tabs which each displayed a different live stream, one per location. Viewers can interact with the windows by pinching and moving them to reveal more of the space. </p>
 
         <div class="half-grid">
-            <img src="img/telpar/triane stand.JPG">
+            <img src="img/telpar/kai.jpg">
             <p>The installation sets out to capture a sense of play; with its bright colour scheme; with its cartoon hand icons. Connection is gained between two viewers who are both interacting with the installation at the same time in different locations on campus. Moving the windows to see better, viewers bond over the shared experience in a joyful way. It mirrors how everybody on campus is bonded over all participating within the university: together.<br><br> As long as the window is 'grabbed' by the user, it moves with their hand. The window only shows the picture within its bounds. So, moving it around reveals more of the picture behind it which is another location on campus. Being able to uncover the background of the other locations as well as the users at the other sites is the core of the project's experience. </p>
             
 
@@ -59,6 +65,8 @@
 
         <p>Each location's setup consisted of a TV screen display, a tower PC for running all the programs, and a desktop set up for on-the-fly fixes. A webcam on the TV captured the live footage via OBS which then streamed to YouTube Live. There needed to be three YouTube accounts since you can only have one stream live at a time per account. For each location, its own footage was sent from OBS to TouchDesigner through a plugin called MediaPipe. The other streams of video were sent into TouchDesigner though a native feature for importing web content.<br><br>TouchDesigner by Derivative is a node-based program for audio/visual interactions. In TouchDesigner, the local video comes in through the MediaPipe plugin and the live video content from the other locations is imported and cropped through a web node. Hand tracking is also done with MediaPipe using a Google AI model. By calculating the distance between fingers and checking whether the cursor is overlapping with the handle of the windows, the user can grab and move the video windows.    </p>
 
+                <img src="img/telpar/live-interaction.jpg" style="border: solid, 1px;">
+                
     </section>
     
 </body>
